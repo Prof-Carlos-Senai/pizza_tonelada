@@ -18,8 +18,8 @@ export default class Custo {
 
     // Recebe o objeto qtdeIngredientes (que já passou pelas regras da Receita)
     calcularCusto(qtdeIngredientes) {
-        // Multiplicamos a qtde (gramas/1000 = kg) pelo preço - farina, sal, fermento açúcar
-        // Multiplicamos a qtde (mililitros/1000 = L) pelo preço - azeite e água
+        // Multiplicamos a qtde (gramas * 1000 = kg) pelo preço - farina, sal, fermento açúcar
+        // Multiplicamos a qtde (mililitros * 1000 = L) pelo preço - azeite e água
         this.preco = {
             farinha: Number(((qtdeIngredientes.farinha / 1000) * this.farinha).toFixed(2)),
             agua: Number(((qtdeIngredientes.agua / 1000) * this.agua).toFixed(2)),

@@ -15,7 +15,7 @@ console.log(`A quantidade de pizza M é: ${qtdePizza}`)
 console.log('--- Quantidade de Ingredientes ---')
 console.table(qtdeIngredientes)
 
-// 3. Calculando custoos
+// 3. Calculando custos
 const custo = new Custo()
 const precosIngredientes = custo.calcularCusto(qtdeIngredientes)
 
